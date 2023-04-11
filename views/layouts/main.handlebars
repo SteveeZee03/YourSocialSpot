@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> YourSocialSpot!</title>
+        <link rel="stylesheet" href="/public/CSS/style.css">
+    </head>
+
+
+    <body>
+        <div class="wrappers">
+            <header>
+                <h1>
+                    <a href="/">Home</a>
+                </h1>
+                <nav>
+                    {{#if loggedin}}
+                    <a href="/dashboard"> Dashboard</a>
+                    <button id="logout" class="btn-no-style logout">Logout</button>
+                    {{else}}
+                    <a href="/login">Login</a>
+                    {{/if}}
+                </nav>
+            </header>
+            <main>
+                {{{ body }}}
+            </main>
+            <footer>
+                Thx for checkin YourSocialSpot! 
+            </footer>
+        </div>
+
+
+        {{#if loggedin}}
+        <script src="/public/JavaScript/logout.js"></script>
+        {{/if}}
+    </body>
+
+</html>
