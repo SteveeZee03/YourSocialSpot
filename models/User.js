@@ -1,6 +1,6 @@
 
-const { model, DataTypes } = require('sequelize');
-const sequelize = require('../config/conncetion');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 const { beforeCreate, beforeUpdate } = require('./comment');
 
@@ -52,7 +52,7 @@ User.init({
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user'
+        modelName: 'User'
     }
 );
 

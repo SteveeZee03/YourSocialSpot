@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS SocialSpot_db;
+DROP DATABASE IF EXISTS socialspot_db;
 
-CREATE DATABASE SocialSpot_db;
+CREATE DATABASE socialspot_db;
